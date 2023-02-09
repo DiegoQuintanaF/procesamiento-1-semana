@@ -49,8 +49,8 @@ def velocidad_paraicaidista(arrastre: float, masa_persona: float,
     data.close()
     plt.plot(lista_tiempo, lista_velocidades)
     plt.xlabel('Tiempo (s)')
-    plt.ylabel('Distancia (m)')
-    plt.title(f'Metros sobre tiempo - {identificador}')
+    plt.ylabel('Velocidad (m/s)')
+    plt.title(f'Velocidad sobre tiempo - {identificador}')
     plt.show()
 
 
