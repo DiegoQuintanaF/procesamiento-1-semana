@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as pd
 
 
 paracaidista1 = {
@@ -48,7 +47,6 @@ def velocidad_paraicaidista(arrastre: float, masa_persona: float,
         tiempo_actual = round(tiempo_actual + intervalo_tiempo, 1)
 
     data.close()
-    pd.read_csv(f'{identificador}.csv', sep=';')
     plt.plot(lista_tiempo, lista_velocidades)
     plt.xlabel('Tiempo')
     plt.ylabel('Velocidad')
